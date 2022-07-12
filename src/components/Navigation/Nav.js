@@ -1,5 +1,6 @@
 import React from "react";
-import "../Navigation/style.scss";
+import "./style.scss";
+import { NavLink } from "react-router-dom";
 
 export default function Nav() {
   return (
@@ -7,20 +8,24 @@ export default function Nav() {
       <nav className="navigation">
         <div className="mainNav">
           <div className="leftArea logoArea">
-            <a className="leftText active" href="#">
-              Home
-            </a>
+            <ul>
+              <li>
+                <NavLink className="leftText" to="/">
+                  Home
+                </NavLink>
+              </li>
+            </ul>
           </div>
           <div className="rightArea navItems">
             <ul className="rightUl">
               <li className="navRightLi">
-                <a href="/projects">Projects</a>
+                <NavLink to="/projects">Projects</NavLink>
               </li>
               <li className="navRightLi">
-                <a href="/about-me">More About</a>
+                <NavLink to="/about-me">More About</NavLink>
               </li>
               <li className="navRightLi">
-                <a href="/contact">Reach Me</a>
+                <NavLink to="/contact">Reach Me</NavLink>
               </li>
             </ul>
           </div>

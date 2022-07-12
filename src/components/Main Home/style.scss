@@ -2,6 +2,18 @@ html {
   font-size: 62.5%;
 }
 
+@media only screen and (max-width: 698px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  html {
+    font-size: 30%;
+  }
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -67,13 +79,17 @@ span {
   display: flex;
   flex-direction: column;
   //   background-color: purple;
-  height: 240px;
-  width: 650px;
+  height: 24rem;
+  width: 65rem;
 }
 
 .professionContent {
   display: flex;
   margin-top: 0.5rem;
+}
+
+.topBoxForIM {
+  margin-bottom: 1rem;
 }
 
 .topLeftText {
@@ -89,7 +105,7 @@ span {
   font-size: 2rem;
   font-family: "Source Code Pro", monospace;
   position: relative;
-  top: -10.6rem;
+  top: -10.8rem;
   display: flex;
   margin-right: 0.5rem;
 }
@@ -150,8 +166,8 @@ span {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
   letter-spacing: 0.04em;
 }
 
@@ -181,7 +197,7 @@ span {
   position: absolute;
   width: 22.4rem;
   height: 7.8rem;
-  top: 90%;
+  top: 82rem;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+::selection {
+  color: rgb(255, 255, 255);
+  background: rgb(85, 85, 85);
+}
+
+.main {
+  height: 100vh;
+  padding: 6rem 8rem 8rem 8rem;
+}
+
+.topTextDiv {
+  display: inline-block;
+  position: absolute;
+}
+
+.topLeftText {
+  font-size: 3.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.worksTextSpan {
+  margin-left: 9rem;
+  -webkit-text-stroke: 0.15rem black;
+  color: rgba(255, 255, 255, 0);
+}
+
+.projectSection {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.projectFirstMain {
+  position: relative;
+  top: 10.9rem;
+}
+
+.projectFirst {
+  height: 27.5rem;
+  width: 30rem;
+  background-color: #d9d9d9;
+  border-radius: 0.8rem;
+  margin-top: 4rem;
+  display: flex;
+}
+
+.infoProject {
+  display: flex;
+  margin-top: 1.5rem;
+  justify-content: space-between;
+}
+
+.leftSide {
+  width: auto;
+}
+
+.titleText {
+  font-size: 1.5rem;
+  font-family: "TTHoves DemiBold", monospace;
+}
+
+.descriptionText {
+  font-size: 1.3rem;
+  width: 20rem;
+  display: inline-block;
+}
+
+.rightSide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2.5rem;
+
+  a {
+    .moreBtn {
+      font-size: 1.5rem;
+      font-family: "TTHoves Medium";
+      margin-top: 1rem;
+    }
+  }
+}
+
+.projectSecond {
+  height: 38.5rem;
+  width: 30rem;
+  background-color: #d9d9d9;
+  overflow: hidden;
+  border-radius: 0.8rem;
+  margin-top: 4rem;
+  display: flex;
+}
+
+.projectThird {
+  height: 38.5rem;
+  width: 42.4rem;
+  background-color: #d9d9d9;
+  border-radius: 0.8rem;
+  margin-top: 4rem;
+  display: flex;
+}
+
+.projectFourth {
+  height: 38.5rem;
+  width: 30rem;
+  background-color: #d9d9d9;
+  border-radius: 0.8rem;
+  margin-top: 4rem;
+  display: flex;
+}
+
+@media only screen and (max-width: 760px) {
+  .projectFirstMain {
+    position: static;
+    margin-top: 12rem;
+  }
+}

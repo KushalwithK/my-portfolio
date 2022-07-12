@@ -1,0 +1,267 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+span {
+  display: inline;
+}
+
+.openingAnchorBackground {
+  font-family: "Source Code Pro", monospace;
+  font-size: 14rem;
+  position: absolute;
+  font-weight: 800;
+  top: 20rem;
+  left: 22rem;
+  transform: rotate(-20deg);
+  color: rgba(0, 0, 0, 0.03);
+}
+
+.closingAnchorBackground {
+  font-family: "Source Code Pro", monospace;
+  font-size: 14rem;
+  font-weight: 800;
+  position: absolute;
+  bottom: 20rem;
+  right: 18rem;
+  color: rgba(0, 0, 0, 0.03);
+}
+
+.classParamBackground {
+  font-family: "Source Code Pro", monospace;
+  font-size: 5rem;
+  position: absolute;
+  font-weight: 800;
+  top: 23rem;
+  right: 15rem;
+  transform: rotate(30deg);
+  color: rgba(0, 0, 0, 0.03);
+}
+
+.funParamBackground {
+  font-family: "Source Code Pro", monospace;
+  font-size: 5rem;
+  position: absolute;
+  font-weight: 800;
+  bottom: 14rem;
+  left: 10rem;
+  transform: rotate(-155deg);
+  color: rgba(0, 0, 0, 0.03);
+}
+
+.mainDiv {
+  //   position: absolute;
+  //   top: -2rem;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainBox {
+  display: flex;
+  flex-direction: column;
+  //   background-color: purple;
+  height: 240px;
+  width: 650px;
+}
+
+.professionContent {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.topLeftText {
+  font-family: "TTHoves Bold";
+  font-size: 5rem;
+  align-items: left;
+  margin-left: 0.2rem;
+  line-height: 0.9;
+  margin-bottom: 1rem;
+}
+
+.defSpan {
+  font-size: 2rem;
+  font-family: "Source Code Pro", monospace;
+  position: relative;
+  top: -10.6rem;
+  display: flex;
+  margin-right: 0.5rem;
+}
+
+.mainNameText {
+  font-family: "TTHoves ExtraBold";
+  font-size: 8.6rem;
+  line-height: 0.64;
+  display: inline;
+}
+
+.extraCodingText {
+  font-size: 2rem;
+  font-family: "Source Code Pro", monospace;
+  margin-bottom: 1rem;
+}
+
+.belowTextMain {
+  font-size: 1.9rem;
+  font-family: "TTHoves Medium";
+  margin-left: 0.55rem;
+  letter-spacing: 0.24rem;
+}
+
+.belowTextLast {
+  font-size: 1.9rem;
+  font-family: "TTHoves Medium";
+  margin-left: 0.55rem;
+  letter-spacing: 0.24rem;
+}
+
+.dash::before {
+  content: "-";
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+  text-decoration: none;
+}
+
+.freelancer::after {
+  content: "";
+  width: 98%;
+  height: 0.2rem;
+  display: block;
+  background-color: black;
+  margin: auto;
+}
+
+.exploreContent {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.3rem;
+}
+
+.exploreInCode {
+  margin-right: 1.1rem;
+  color: #646464;
+  font-family: "Source Code Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+}
+
+.exploreInCode::after {
+  content: "};";
+  font-weight: 800;
+  position: relative;
+  right: 14.2rem;
+  top: 3rem;
+}
+
+.exploreButton {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-left: 6.5rem;
+  position: relative;
+  top: 0.6rem;
+}
+
+.exploreButton:hover {
+  color: #5f22d9;
+}
+
+.socials {
+  position: absolute;
+  width: 22.4rem;
+  height: 7.8rem;
+  top: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialText {
+  margin-top: 0.5rem;
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.socialTextBox {
+  margin-bottom: 1.3rem;
+}
+
+.mainSocialBox {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 19.5rem;
+}
+
+.instagramBox {
+  background: #f00073;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.instagramIcon {
+  color: white;
+  font-size: 2.2rem;
+}
+
+.behanceBox {
+  background: #1157ff;
+  border-radius: 0.5rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+}
+
+.behanceIcon {
+  color: white;
+  font-size: 1.8rem;
+}
+
+.gitHubBox {
+  background: #231e1b;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.githubIcon {
+  color: white;
+  font-size: 1.8rem;
+}
+
+.twitterBox {
+  background: #1da1f2;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.twitterIcon {
+  color: white;
+  font-size: 2rem;
+}

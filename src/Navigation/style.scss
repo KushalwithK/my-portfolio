@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a.leftText {
+  text-decoration: none;
+  font-size: 1.62rem;
+  color: #5f22d9;
+}
+
+li a {
+  text-decoration: none;
+  font-size: 1.62rem;
+  color: black;
+}
+
+li a:hover {
+  color: #5f22d9;
+  font-weight: 400;
+}
+
+li a.active {
+  color: #5f22d9;
+}
+
+.navigation {
+  background-color: white;
+  display: flex;
+  height: 9rem;
+  z-index: 9999;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+
+.mainNav {
+  display: flex;
+}
+
+.leftArea {
+  margin-left: 6rem;
+  align-items: center;
+}
+
+.leftText {
+  font-family: "TTHoves DemiBold";
+}
+
+.rightArea {
+  position: absolute;
+  right: 0;
+  margin-right: 3.5rem;
+}
+
+.navRightLi {
+  font-family: "TTHoves DemiBold";
+  margin-right: 4.5rem;
+  list-style: none;
+}
+
+.rightUl {
+  display: flex;
+}

@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@font-face {
+  font-family: "TTHoves DemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("TTHoves-DemiBold"),
+    url("../../public/fonts/TTHoves-DemiBold.woff") format("woff");
+}
+
+.loader-container {
+  font-family: "TTHoves DemiBold", sans-serif;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 100vh;
+  // display: none;
+
+  background-color: #101010;
+
+  .counter-container {
+    overflow: hidden;
+    height: 30vw;
+    min-height: 30vw;
+  }
+
+  h3 {
+    z-index: 9999;
+    margin-top: 0px;
+    margin-bottom: 1vw;
+    color: rgb(183, 183, 183);
+    font-size: 32rem;
+    // margin-left: 2rem;
+    line-height: 30vw;
+    font-weight: 300;
+  }
+}
+
+.count-left {
+  margin-left: 5rem;
+}
+
+.hero-container {
+  position: relative;
+  height: 100vh;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .hero-title {
+    position: absolute;
+    bottom: 5vw;
+    left: 5vw;
+
+    font-size: clamp(72px, 15vw, 15vw);
+    color: white;
+    font-family: "Oswald", sans-serif;
+
+    text-transform: lowercase;
+    font-weight: 100;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .loader-container .counter-container {
+    max-height: 200px;
+    margin-bottom: 5rem;
+  }
+
+  .loader-container h3 {
+    font-size: 20rem;
+  }
+}

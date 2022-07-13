@@ -1,15 +1,26 @@
 import React from "react";
 import "./style.scss";
 import { NavLink } from "react-router-dom";
+import BigCursor from "../Cursor/CursorContext";
+import { useContext } from "react";
 
 export default function Nav() {
+  const setCursor = useContext(BigCursor);
+
   return (
     <div>
       <nav className="navigation">
         <div className="mainNav">
           <div className="leftArea logoArea">
             <ul>
-              <li>
+              <li
+                onMouseOver={() => {
+                  setCursor(true);
+                }}
+                onMouseOut={() => {
+                  setCursor(false);
+                }}
+              >
                 <NavLink className="leftText" to="/">
                   Home
                 </NavLink>

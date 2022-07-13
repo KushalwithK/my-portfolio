@@ -34,7 +34,7 @@ li a:hover {
 
 .navigation {
   background-color: rgba(255, 255, 255, 0.027);
-  // backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
   display: flex;
   height: 10rem;
   z-index: 9999;

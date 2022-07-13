@@ -1,0 +1,75 @@
+.aboutDiv {
+  width: 100%;
+  height: 100%;
+  padding: 5rem;
+
+  .about {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .aboutLeft {
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+
+      .moreBtn {
+        background-color: #101010;
+        width: 14rem;
+        height: 14rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "TTHoves Medium";
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.6rem;
+      }
+    }
+    .aboutRight {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      max-width: 72rem;
+      .spanText {
+        font-size: 2rem;
+        // width: 72rem;
+        font-family: "TTHoves DemiBold";
+        line-height: 2.8rem;
+      }
+      .firstText {
+        margin-bottom: 2rem;
+      }
+      .secondText {
+        color: #4f4f4f;
+      }
+      .signature {
+        font-size: 4rem;
+        display: inline-block;
+        margin-top: 2rem;
+        margin-left: 0.8rem;
+        font-family: Helmwick;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .aboutDiv,
+  .about {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 698px) {
+  html {
+    font-size: 66%;
+  }
+}
+
+@media only screen and (max-width: 456px) {
+  html {
+    font-size: 56%;
+  }
+}

@@ -4,9 +4,7 @@
   box-sizing: border-box;
 }
 
-.viewport {
-  margin: 0 0 0 0;
-  width: 100vw;
-  overflow-x: hidden;
-  position: fixed;
+::selection {
+  background-color: rgb(119, 119, 119);
+  color: white;
 }

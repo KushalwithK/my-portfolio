@@ -1,82 +1,80 @@
 import React from "react";
 import "../Projects/style.scss";
+import images from "../../data";
+import BigCursor from "../Cursor/CursorContext";
+import { useContext } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Projects = () => {
+  const [firstUrl, secondUrl] = images;
+  const setCursor = useContext(BigCursor);
+
   return (
     <>
-      <div className="main">
-        <div className="topTextDiv">
-          <h1 className="awsomeText topText topLeftText">Awesome</h1>
-          <h1 className="worksText bottomText topLeftText">
-            <span className="worksTextSpan">Works</span>
+      <div className="projects" data-scroll-section>
+        <div className="title">
+          <h1>
+            <span>Awesome</span>
+            <span>Projects</span>
           </h1>
         </div>
-        <div className="projectSection">
-          <div className="firstProjectSection">
-            <div className="projectFirstMain">
-              <div className="projectFirst"></div>
-              <div className="infoProject">
-                <div className="leftSide">
-                  <h3 className="titleText">Project Title Here</h3>
-                  <p className="descriptionText">App Development /{">"}</p>
-                </div>
-                <div className="rightSide">
-                  <a href="/">
-                    <span className="moreBtn">More</span>
-                  </a>
-                </div>
+
+        <section className="projects-section">
+          <a
+            href="#"
+            className="projects-left-layout"
+            onMouseOver={() => {
+              setCursor(true);
+            }}
+            onMouseOut={() => {
+              setCursor(false);
+            }}
+          >
+            <img src={firstUrl} alt="failed to load" data-scroll />
+            <div className="mainInfo">
+              <div className="projectTitle">
+                <h1>
+                  <span>Project 1 Title Here</span>
+                  <span>UI/UX Designing</span>
+                </h1>
+              </div>
+              <div className="arrow">
+                <span>
+                  <FontAwesomeIcon icon={faArrowRight} />
+                </span>
               </div>
             </div>
-          </div>
-          <div className="secondProjectSection">
-            <div className="projectSecondMain">
-              <div className="projectSecond"></div>
-              <div className="infoProject">
-                <div className="leftSide">
-                  <h3 className="titleText">Project Title Here</h3>
-                  <p className="descriptionText">App Development /{">"}</p>
-                </div>
-                <div className="rightSide">
-                  <a href="/">
-                    <span className="moreBtn">More</span>
-                  </a>
-                </div>
+          </a>
+          <a
+            href="#"
+            className="projects-right-layout"
+            onMouseOver={() => {
+              setCursor(true);
+            }}
+            onMouseOut={() => {
+              setCursor(false);
+            }}
+          >
+            <img src={secondUrl} alt="failed to load" data-scroll />
+            <div className="mainInfo">
+              <div className="projectTitle">
+                <h1>
+                  <span>Project 2 Title Here</span>
+                  <span>Web Designing</span>
+                </h1>
+              </div>
+              <div className="arrow">
+                <span>
+                  <FontAwesomeIcon icon={faArrowRight} />
+                </span>
               </div>
             </div>
-          </div>
-          <div className="ThirdProjectSection">
-            <div className="projectThirdMain">
-              <div className="projectThird"></div>
-              <div className="infoProject">
-                <div className="leftSide">
-                  <h3 className="titleText">Project Title Here</h3>
-                  <p className="descriptionText">App Development /{">"}</p>
-                </div>
-                <div className="rightSide">
-                  <a href="/">
-                    <span className="moreBtn">More</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="FourthProjectSection">
-            <div className="projectFourthMain">
-              <div className="projectFourth"></div>
-              <div className="infoProject">
-                <div className="leftSide">
-                  <h3 className="titleText">Project Title Here</h3>
-                  <p className="descriptionText">App Development /{">"}</p>
-                </div>
-                <div className="rightSide">
-                  <a href="/">
-                    <span className="moreBtn">More</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+          </a>
+        </section>
+        <a href="#" className="moreBtn">
+          More?
+        </a>
       </div>
     </>
   );

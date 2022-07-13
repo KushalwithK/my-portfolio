@@ -9,22 +9,50 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import Projects from "../Projects/Projects";
+import BigCursor from "../Cursor/CursorContext";
+import { useContext } from "react";
+import About from "../About/About";
 
 const Home = (props) => {
+  const setCursor = useContext(BigCursor);
+
   return (
     <>
-      <div>
+      <div data-scroll-section>
         <div className="mainDiv">
           <div className="backgroundParticles">
-            <span className="openingAnchorBackground">&lt;&gt;</span>
-            <span className="closingAnchorBackground">&lt;/&gt;</span>
-            <span className="classParamBackground">
+            <span
+              className="openingAnchorBackground particles"
+              data-scroll
+              data-scroll-speed="4"
+            >
+              &lt;&gt;
+            </span>
+            <span
+              className="closingAnchorBackground particles"
+              data-scroll
+              data-scroll-speed="3"
+            >
+              &lt;/&gt;
+            </span>
+            <span
+              className="classParamBackground particles"
+              data-scroll
+              data-scroll-speed="5"
+            >
               class &#123; ... &#x7D;
             </span>
-            <span className="funParamBackground">fun ( ... )</span>
+            <span
+              className="funParamBackground particles"
+              data-scroll
+              data-scroll-speed="2"
+            >
+              fun ( ... )
+            </span>
           </div>
-          <span className="defSpan">def</span>
+
           <div className="mainBox">
+            <span className="defSpan">def</span>
             <div className="topBoxForIM">
               <h1 className="topLeftText">I'M,</h1>
             </div>
@@ -52,12 +80,21 @@ const Home = (props) => {
               </div>
             </div>
           </div>
-          <div className="socials">
+          <div className="socials" data-scroll data-scroll-speed="6">
             <div className="socialTextBox">
               <span className="socialText">&lt;/ My Social Handles &gt;</span>
             </div>
             <div className="mainSocialBox">
-              <a href="/">
+              <a
+                href="/"
+                className="socialHover"
+                onMouseOver={() => {
+                  setCursor(true);
+                }}
+                onMouseOut={() => {
+                  setCursor(false);
+                }}
+              >
                 <div className="instagramBox">
                   <FontAwesomeIcon
                     className="instagramIcon"
@@ -65,17 +102,44 @@ const Home = (props) => {
                   />
                 </div>
               </a>
-              <a href="/">
+              <a
+                href="/"
+                className="socialHover"
+                onMouseOver={() => {
+                  setCursor(true);
+                }}
+                onMouseOut={() => {
+                  setCursor(false);
+                }}
+              >
                 <div className="behanceBox">
                   <FontAwesomeIcon className="behanceIcon" icon={faBehance} />
                 </div>
               </a>
-              <a href="/">
+              <a
+                href="/"
+                className="socialHover"
+                onMouseOver={() => {
+                  setCursor(true);
+                }}
+                onMouseOut={() => {
+                  setCursor(false);
+                }}
+              >
                 <div className="gitHubBox">
                   <FontAwesomeIcon className="githubIcon" icon={faGithub} />
                 </div>
               </a>
-              <a href="/">
+              <a
+                href="/"
+                className="socialHover"
+                onMouseOver={() => {
+                  setCursor(true);
+                }}
+                onMouseOut={() => {
+                  setCursor(false);
+                }}
+              >
                 <div className="twitterBox">
                   <FontAwesomeIcon className="twitterIcon" icon={faTwitter} />
                 </div>
@@ -85,6 +149,7 @@ const Home = (props) => {
         </div>
       </div>
       <Projects />
+      <About />
     </>
   );
 };

@@ -35,24 +35,34 @@ function App() {
 
   return (
     <>
-      {loading ? (
+      {/* {loading ? (
         <Preloader />
-      ) : (
-        <>
-          <Nav />
-          <Cursor bigCursor={bigCursor} />
-          <BigCursor.Provider value={setCursor}>
-            <div data-scroll-container ref={scrollRef}>
-              <Routes>
-                <Route exact key="home" path="/" element={<HomeTop />} />
-                <Route exact key="about" path="/about-me" element={<About />} />
-                {/* <Route exact key="projects" path="/projects" element={<Projects />} />
-          <Route exact key="contact" path="/contact" element={<Contact />} /> */}
-              </Routes>
-            </div>
-          </BigCursor.Provider>
-        </>
-      )}
+      ) : ( */}
+      <>
+        <Nav />
+        <Cursor bigCursor={bigCursor} />
+        <BigCursor.Provider value={setCursor}>
+          <div data-scroll-container ref={scrollRef}>
+            <Routes>
+              <Route exact key="home" path="/" element={<HomeTop />} />
+              <Route exact key="about" path="/about-me" element={<About />} />
+              {/* <Route
+                  exact
+                  key="projects"
+                  path="/projects"
+                  element={<Projects />}
+                />
+                <Route
+                  exact
+                  key="contact"
+                  path="/contact"
+                  element={<Contact />}
+                /> */}
+            </Routes>
+          </div>
+        </BigCursor.Provider>
+      </>
+      {/* )} */}
     </>
   );
 }

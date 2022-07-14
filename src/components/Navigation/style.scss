@@ -5,39 +5,38 @@
 
 a.leftText {
   text-decoration: none;
-  font-size: 1.62rem;
+  font-size: 16px;
   color: #000000;
 }
 
 li a {
   text-decoration: none;
-  font-size: 1.62rem;
+  font-size: 16px;
   color: black;
 }
 
 li {
   text-decoration: none;
-  font-size: 1.62rem;
+  font-size: 1.6px;
   color: black;
   list-style-type: none;
 }
 
 li a:hover {
   color: #5f22d9;
-  font-weight: 400;
-  transition: all 0.2s ease-out;
+  transition: color 0.2s ease-out;
 }
 
-// li a.active {
-//   color: #5f22d9;
-// }
+li a.active {
+  color: #5f22d9;
+}
 
 .navigation {
   background-color: rgba(255, 255, 255, 0.027);
   backdrop-filter: blur(4px);
   display: flex;
   height: 10rem;
-  z-index: 9999;
+  z-index: 999;
   align-items: center;
   position: absolute;
   width: 100%;
@@ -48,28 +47,36 @@ li a:hover {
 }
 
 .leftArea {
-  margin-left: 6rem;
+  margin-left: 8rem;
   align-items: center;
   display: flex;
   flex-direction: column;
 }
 
 .leftText {
-  font-family: "TTHoves DemiBold";
+  font-family: "TTHoves Medium";
+  letter-spacing: 0.06rem;
 }
 
 .rightArea {
   position: absolute;
   right: 0;
-  margin-right: 3.5rem;
+  margin-right: 4rem;
 }
 
 .navRightLi {
-  font-family: "TTHoves DemiBold";
+  font-family: "TTHoves Medium";
+  letter-spacing: 0.06rem;
   margin-right: 4.5rem;
   list-style: none;
 }
 
 .rightUl {
   display: flex;
+}
+
+@media only screen and (max-width: 698px) {
+  .navigation {
+    height: 12rem;
+  }
 }

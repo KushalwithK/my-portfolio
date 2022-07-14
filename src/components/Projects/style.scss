@@ -5,7 +5,7 @@ a {
 
 .projects {
   max-width: 100%;
-  padding: 0rem 7rem;
+  padding: 3rem 15rem;
   margin-bottom: 6rem;
   .title {
     font-family: "TT Hoves Light";
@@ -38,7 +38,7 @@ a {
 
     .projects-left-layout,
     .projects-right-layout {
-      flex-basis: calc(50% - 2rem);
+      flex-basis: calc(47% - 2rem);
 
       img {
         border-radius: 3px;
@@ -106,7 +106,7 @@ a {
 // ipad
 @media only screen and (max-width: 810px) {
   .projects {
-    padding: 0rem 5rem;
+    padding: 0rem 7rem;
   }
   .projects-section {
     flex-direction: column;
@@ -120,6 +120,6 @@ a {
 // Mobile
 @media only screen and (max-width: 600px) {
   .projects {
-    padding: 0rem 2rem;
+    padding: 0rem 5rem;
   }
 }

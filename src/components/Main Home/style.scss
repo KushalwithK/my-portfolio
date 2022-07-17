@@ -77,8 +77,10 @@ span {
 }
 
 .mainBox {
+  margin-top: 7rem;
   display: flex;
   flex-direction: column;
+  margin-left: 5rem;
   //   background-color: purple;
   height: 24rem;
   width: 65rem;
@@ -94,8 +96,8 @@ span {
 }
 
 .topLeftText {
-  font-family: "TTHoves Bold";
-  font-size: 5rem;
+  font-family: "TTHoves Medium";
+  font-size: 4.5rem;
   align-items: left;
   margin-left: 0.2rem;
   line-height: 0.9;
@@ -105,15 +107,16 @@ span {
   font-size: 2rem;
   font-family: "Source Code Pro", monospace;
   position: relative;
-  top: 2.6rem;
+  top: 2.3rem;
   left: -4rem;
   display: flex;
   margin-right: 0.5rem;
 }
 
 .mainNameText {
-  font-family: "TTHoves ExtraBold";
-  font-size: 8.6rem;
+  font-family: "TTHoves Medium";
+  font-size: 8.4rem;
+  letter-spacing: 0.3rem;
   line-height: 0.64;
   display: inline;
 }
@@ -128,13 +131,19 @@ span {
   font-size: 1.9rem;
   font-family: "TTHoves Medium";
   margin-left: 0.55rem;
+  color: rgba(35, 30, 27, 0.644);
   letter-spacing: 0.24rem;
+}
+
+.activeText {
+  color: black;
 }
 
 .belowTextLast {
   font-size: 1.9rem;
   font-family: "TTHoves Medium";
   margin-left: 0.55rem;
+  color: rgba(35, 30, 27, 0.644);
   letter-spacing: 0.24rem;
 }
 
@@ -202,10 +211,9 @@ span {
   position: relative;
   width: 22.4rem;
   height: 7.8rem;
-  top: 11.5rem;
+  top: 8rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 

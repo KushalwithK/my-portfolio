@@ -1,7 +1,8 @@
 .aboutDiv {
-  width: 100%;
+  padding: 15rem;
+  padding-bottom: 10rem;
+  max-width: 100%;
   height: 100%;
-  padding: 5rem;
 
   .about {
     display: flex;
@@ -53,12 +54,33 @@
       }
     }
   }
+
+  .bottomImages {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10rem;
+    .bottomImage {
+      height: 25rem;
+      width: 25rem;
+      border-radius: 1rem;
+    }
+  }
 }
 
 @media only screen and (max-width: 980px) {
   .aboutDiv,
   .about {
     flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .aboutDiv {
+    .bottomImages {
+      display: none;
+    }
   }
 }
 

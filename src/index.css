@@ -1,4 +1,12 @@
 @font-face {
+  font-family: "TTHoves ExtraLight";
+  font-style: normal;
+  font-weight: normal;
+  src: local("TTHoves-ExtraLight"),
+    url("../public/fonts/TTHoves-ExtraLight.woff") format("woff");
+}
+
+@font-face {
   font-family: "TTHoves Light";
   font-style: normal;
   font-weight: normal;
@@ -102,4 +110,11 @@ a {
   height: 40px;
   border: 2px solid #541fbe80;
   background-color: rgba(0, 0, 0, 0);
+}
+
+@media only screen and (max-width: 698px) {
+  .cursor-dot,
+  .cursor-dot-outline {
+    display: none;
+  }
 }

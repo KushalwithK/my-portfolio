@@ -2,7 +2,6 @@ import logo from "./logo.svg";
 import "./App.css";
 import React, { useState, useEffect, useRef } from "react";
 import Preloader from "./components/preLoader/Preloader.tsx";
-import Nav from "./components/Navigation/Nav";
 import HomeTop from "./components/Main Home/HomeTop";
 import "./components/Main Home/mediaQueries.scss";
 import Projects from "./components/Projects/Projects";
@@ -39,7 +38,6 @@ function App() {
         <Preloader />
       ) : ( */}
       <>
-        <Nav />
         <Cursor bigCursor={bigCursor} />
         <BigCursor.Provider value={setCursor}>
           <div data-scroll-container ref={scrollRef}>

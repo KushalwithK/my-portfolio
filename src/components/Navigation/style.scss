@@ -33,12 +33,11 @@ li a.active {
 
 .navigation {
   background-color: rgba(255, 255, 255, 0.027);
-  backdrop-filter: blur(4px);
   display: flex;
   height: 10rem;
   z-index: 999;
   align-items: center;
-  position: absolute;
+  position: fixed;
   width: 100%;
 }
 
@@ -78,5 +77,97 @@ li a.active {
 @media only screen and (max-width: 698px) {
   .navigation {
     height: 12rem;
+  }
+}
+
+.mobileNav {
+  display: none;
+}
+
+@media only screen and (max-width: 810px) {
+  .navigation {
+    display: none;
+  }
+  .hamburger-icon {
+    position: absolute;
+    right: 5rem;
+    top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 99999999;
+  }
+  .line {
+    width: 3.7rem;
+    height: 0.3rem;
+    background: #101010;
+    transition: 0.5s;
+    border-radius: 2.5rem;
+    margin-bottom: 0.52em;
+    opacity: 1;
+    transition: all 0.3s ease-in;
+  }
+  .line:last-child {
+    width: 2.5rem;
+    height: 0.3rem;
+  }
+  .active1 {
+    background: #fff;
+    -webkit-transform: rotate(45deg);
+    -webkit-transform-origin: 10px 5px;
+    transform: rotate(47deg);
+    transform-origin: 10px 4.5px;
+    width: 2.5rem;
+  }
+  .active2 {
+    -webkit-transform: rotate(-45deg);
+    -webkit-transform-origin: 6px -3px;
+    transform: rotate(-45deg);
+    transform-origin: 6px -3px;
+    background: #fff;
+  }
+  .mobileNav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #101010;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    font-family: "MaximSans Semibold";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.8s ease-in-out;
+    transform: translateX(-100%);
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      li {
+        display: flex;
+        flex-direction: column;
+        font-family: "TT Hoves Regular";
+        margin-bottom: 3.5rem;
+
+        a {
+          color: rgba(255, 255, 255, 0.623);
+          font-size: 5rem;
+          letter-spacing: 0.2rem;
+        }
+        a:hover {
+          color: white;
+          transition: all 0.5s ease-in;
+        }
+      }
+      .activeLi a {
+        color: white;
+      }
+    }
+  }
+  .isOpen {
+    transform: translateX(0%);
+    transition: all 0.5s ease-in-out;
   }
 }

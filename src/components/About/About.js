@@ -7,7 +7,12 @@ const About = () => {
       <div className="aboutDiv" data-scroll-section>
         <div className="about">
           <div className="aboutLeft">
-            <a href="/about-me" className="moreBtn">
+            <a
+              href="/about-me"
+              className="moreBtn"
+              data-scroll
+              data-scroll-speed="3"
+            >
               About me
             </a>
           </div>
@@ -26,6 +31,36 @@ const About = () => {
             </p>
             <span className="signature">Kushal</span>
           </div>
+        </div>
+        <div className="bottomImages">
+          <img
+            src="https://www.teahub.io/photos/full/27-274683_dark-minimal-wallpaper-phone.jpg"
+            alt="achievements"
+            className="bottomImage"
+            data-scroll
+            data-scroll-speed="1"
+          ></img>
+          <img
+            src="https://www.teahub.io/photos/full/27-274683_dark-minimal-wallpaper-phone.jpg"
+            alt="achievements"
+            className="bottomImage"
+            data-scroll
+            data-scroll-speed="2"
+          ></img>
+          <img
+            src="https://www.teahub.io/photos/full/27-274683_dark-minimal-wallpaper-phone.jpg"
+            alt="achievements"
+            className="bottomImage"
+            data-scroll
+            data-scroll-speed="3"
+          ></img>
+          <img
+            src="https://www.teahub.io/photos/full/27-274683_dark-minimal-wallpaper-phone.jpg"
+            alt="achievements"
+            className="bottomImage"
+            data-scroll
+            data-scroll-speed="4"
+          ></img>
         </div>
       </div>
     </>

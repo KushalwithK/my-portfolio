@@ -1,0 +1,77 @@
+.footer {
+  height: 100%;
+  max-width: 100%;
+
+  .footerMain {
+    background-color: rgb(247 247 247 / 70%);
+    height: 25rem;
+    width: 100%;
+
+    .upperText {
+      display: flex;
+      justify-content: space-between;
+      padding: 3.5rem;
+      padding-left: 6rem;
+      padding-right: 6rem;
+      p {
+        font-size: 3.2rem;
+        font-family: TTHoves regular;
+        letter-spacing: 0.1rem;
+      }
+
+      .leftText {
+        p:nth-child(2) {
+          margin-left: 6rem;
+          font-family: TTHoves medium;
+        }
+      }
+
+      .contactBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        p {
+          font-size: 2.8rem;
+        }
+        .arrow {
+          margin-top: 0.2rem;
+          margin-right: 3rem;
+          margin-left: 1rem;
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    .creditSection {
+      display: flex;
+      justify-content: center;
+
+      .creditText {
+        display: flex;
+        align-items: flex-end;
+        letter-spacing: 0.05rem;
+        font-size: 1.7rem;
+        color: rgb(0, 0, 0);
+        font-family: TTHoves Medium;
+        margin-top: 0.5rem;
+
+        .heart {
+          color: rgb(255, 0, 0);
+          margin-bottom: 0.2rem;
+          margin-left: 0.6rem;
+          margin-right: 0.6rem;
+        }
+
+        .underline {
+          font-family: TTHoves DemiBold;
+        }
+
+        .underline:hover {
+          text-decoration: underline;
+          transition: text-decoration 0.3s ease-out;
+        }
+      }
+    }
+  }
+}

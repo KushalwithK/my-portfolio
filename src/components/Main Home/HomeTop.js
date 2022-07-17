@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.scss";
 import "./mediaQueries.scss";
+import Nav from "../Navigation/Nav";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
@@ -12,6 +13,7 @@ import Projects from "../Projects/Projects";
 import BigCursor from "../Cursor/CursorContext";
 import { useContext } from "react";
 import About from "../About/About";
+import Footer from "../Footer/Footer";
 
 const Home = (props) => {
   const setCursor = useContext(BigCursor);
@@ -19,6 +21,7 @@ const Home = (props) => {
   return (
     <>
       <div data-scroll-section>
+        <Nav />
         <div className="mainDiv">
           <div className="backgroundParticles">
             <span
@@ -52,7 +55,7 @@ const Home = (props) => {
           </div>
 
           <div className="mainBox">
-            <span className="defSpan">def</span>
+            <span className="defSpan">hey</span>
             <div className="topBoxForIM">
               <h1 className="topLeftText">I'M,</h1>
             </div>
@@ -61,7 +64,7 @@ const Home = (props) => {
               <span className="extraCodingText">():</span>
             </div>
             <div className="professionContent">
-              <p className="belowTextMain freelancer">FREELANCER</p>
+              <p className="belowTextMain freelancer activeText">FREELANCER</p>
               <p className="belowTextMain webDeveloper dash">WEB DEVELOPER</p>
               <p className="belowTextLast androidDeveloper dash">
                 ANDROID DEVELOPER;
@@ -150,6 +153,7 @@ const Home = (props) => {
       </div>
       <Projects />
       <About />
+      <Footer />
     </>
   );
 };

@@ -4,17 +4,20 @@ a {
 }
 
 .projects {
+  height: 100%;
   max-width: 100%;
-  padding: 3rem 15rem;
-  margin-bottom: 6rem;
+  margin-top: 5rem;
+  padding: 8rem 15rem;
+  background-color: rgb(247 247 247 / 70%);
   .title {
-    font-family: "TT Hoves Light";
+    font-family: "TTHoves Light";
+    letter-spacing: 0.1rem;
     // font-size: 4.5rem;
-    font-weight: 400;
-    font-size: clamp(2rem, 10vw, 3.5rem);
-    margin-top: 10rem;
-    margin-bottom: 10rem;
-    h1 {
+    font-size: clamp(4.5rem, 10vw, 6rem);
+    position: relative;
+    top: 5rem;
+
+    span {
       margin-left: 4rem;
       width: auto;
       display: inline-block;
@@ -36,8 +39,7 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
 
-    .projects-left-layout,
-    .projects-right-layout {
+    .projectsCard {
       flex-basis: calc(47% - 2rem);
 
       img {
@@ -67,6 +69,7 @@ a {
               display: block;
 
               &:last-of-type {
+                color: rgb(105, 105, 105);
                 font-family: TTHoves light;
                 font-size: 1.5rem;
                 line-height: 4rem;
@@ -85,32 +88,74 @@ a {
         }
       }
     }
-  }
-}
 
-.moreBtn {
-  background-color: #101010;
-  width: 10rem;
-  height: 10rem;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "TT Hoves Medium";
-  margin: 6rem auto;
-  text-decoration: none;
-  color: #fff;
-  font-size: 1.5rem;
+    .projectsCard:nth-child(2) {
+      img {
+        height: 73rem;
+        transition: clip-path 1.6s cubic-bezier(0.77, 0, 0.175, 1);
+      }
+    }
+
+    .projectsCard:nth-child(3) {
+      margin-top: 6rem;
+      img {
+        height: 73rem;
+        transition: clip-path 1.8s cubic-bezier(0.77, 0, 0.175, 1);
+      }
+    }
+    .projectsCard:nth-child(4) {
+      height: 82rem;
+      margin-top: 6rem;
+      img {
+        transition: clip-path 2s cubic-bezier(0.77, 0, 0.175, 1);
+      }
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .clickHereToSee {
+          font-size: 2.5rem;
+          font-family: TTHoves Medium;
+        }
+        .moreBtnPc {
+          text-align: center;
+          background-color: #101010;
+          width: 10rem;
+          height: 10rem;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: "TT Hoves Medium";
+          margin: 7rem 0rem;
+          margin-left: 3rem;
+          text-decoration: none;
+          color: #fff;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
 }
 
 // ipad
 @media only screen and (max-width: 810px) {
   .projects {
-    padding: 0rem 7rem;
+    padding: 7rem 7rem;
+    .title {
+      position: static;
+      top: 0;
+    }
   }
   .projects-section {
     flex-direction: column;
   }
+
+  .projectsCard:nth-child(1) {
+    margin-bottom: 6rem;
+    margin-top: 10rem;
+  }
+
   .projects-left-layout,
   .projects-right-layout {
     margin-bottom: 5rem;
